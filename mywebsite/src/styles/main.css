@@ -1,0 +1,564 @@
+
+/* ----------------------------------------------------------------------------
+    INITIALIZE
+---------------------------------------------------------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: "Source Sans 3", system-ui;
+    font-weight: normal;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+h1, h2, h3 {
+    font-family: "Source Code Pro", monospace;
+    font-weight: bold;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------
+    NAVIGATION BAR
+---------------------------------------------------------------------------- */
+.active {
+    background-color: black;
+    color: white;
+}
+
+
+nav {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    padding: 15px 0;
+}
+
+nav .logo {
+    margin: 1rem;
+    text-decoration: none;
+}
+
+nav ul {
+    margin-right: 1rem;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+}
+
+nav ul.open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white; /* Ensure the background covers the screen */
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    justify-content: start;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other content */
+    overflow: hidden; /* Prevent internal scrolling */
+}
+
+body.nav-open {
+    overflow: hidden;
+}
+
+nav ul li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0.5rem;
+    margin: 0.5rem 0.5rem;
+    height: 50px;
+    width: 90%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a span {
+    display: inline;
+    margin-left: 10px;
+}
+
+nav ul li a:not(.active):hover {
+    background-color: black;
+    color: white;
+}
+
+nav .menu {
+    display: flex;
+    position: absolute;
+    top: 1.15rem;
+    right: 1rem;
+    flex-direction: column;
+}
+
+
+/* Responsiveness */
+
+@media screen and (min-width: 1024px) {
+    
+    
+    nav .menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0;
+        padding-top: 0;
+        width: auto;
+    }
+
+    
+
+    nav ul li a {
+        width: 130px;
+        margin: 0 0.5rem;
+        
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    nav .logo {
+        margin: 0;
+    }
+
+    nav {
+        max-width: 1024px;
+        margin: 0 auto;
+        
+    }
+}
+
+
+/* ----------------------------------------------------------------------------
+    HOME PAGE
+---------------------------------------------------------------------------- */
+
+/* SHOWCASE SECTION  */
+
+header div {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header img {
+    border-radius: 10px;
+    border: 4px solid #000;
+    margin: 30px 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 341px;
+}
+
+.welcome-text {
+    margin: 10px 20px;
+    font-size: 40px;
+}
+
+.welcome-text h4 {
+    font-weight: 400;
+}
+
+.welcome-text span {
+    color: #044BD9;
+    font-weight: bold;
+}
+
+header p {
+    margin: 50px 20px 30px 20px;
+    font-size: 18px;
+}
+
+header p span {
+    font-weight: bold;
+}
+
+/* BUTTON 1 */
+
+.btn {
+    border-radius: 10px;
+    border: none;
+    margin: 40px 20px;
+    background-color: #044BD9;
+    padding: 15px 24px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #80C7F2;
+}
+
+.btn span {
+    display: inline;
+    margin-left: 10px;
+    padding-top: 4px;
+}
+
+
+/* BUTTON 2 */
+
+.btn2 {
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    padding: 15px 24px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn2:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn2 span {
+    display: inline;
+    margin-left: 10px;
+    padding-top: 4px;
+}
+
+
+/* FEATURED PORTFOLIO */
+
+.featured-portfolio-title {
+    margin: 180px 20px 30px 20px;
+
+}
+
+.featured-portfolio-title h1 {
+    font-size: 60px;
+    margin-bottom: 25px;
+
+}
+
+.featured-portfolio-title h4 {
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.featured-portfolio-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 20px;
+}
+
+.featured-portfolio-card {
+    display: grid;
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 15px;
+    align-items: end;
+    color: white;
+
+    > * {
+        grid-area: 1 / 1;
+    }
+}
+
+.featured-portfolio-card .gradient {
+    background: linear-gradient(180deg, rgba(201, 201, 201, 0.00) 0%, #000 100%);
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.featured-portfolio-card:nth-of-type(1),
+.featured-portfolio-card:nth-of-type(3) {
+    background-color: #CEECF2;
+}
+
+
+.featured-portfolio-card:nth-of-type(2),
+.featured-portfolio-card:nth-of-type(4) {
+    background-color: #80C7F2;
+}
+
+.featured-portfolio-card .descriptions {
+    margin: 20px 20px;
+}
+
+.featured-portfolio-card .descriptions div {
+    float: left;
+}
+
+.featured-portfolio-card .descriptions img {
+    float: right;
+}
+
+
+
+/* FOOTER SECTION */
+footer {
+    margin-top: 200px;
+}
+
+.footer {
+    background-color: #044BD9;
+    padding: 30px 20px;
+    padding-bottom: 50px;
+    display: grid;
+}
+
+.contact-information {
+    display: grid;
+    align-self: center;
+    justify-content: center;
+}
+
+.contact-information h1 {
+    color: white;
+    font-size: 40px;
+    margin: 20px 0 50px 0;
+    text-align: center;
+}
+
+.contact-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.email-me {
+    background-color: black;
+    color: white;
+    padding: 20px 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.email-me span {
+    color: #80C7F2;
+}
+
+
+.copyright {
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    align-self: center;
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+.copyright span {
+    font-weight: bold;
+}
+
+
+/* RESPONSIVE SECTION */
+
+@media screen and (max-width: 344px) {
+    /* HEADER SECTION */
+    header img {
+        margin-right: 20px;
+        margin-left: 20px;
+        width: 300px;
+    }
+
+    .featured-portfolio-title h1 {
+        font-size: 54px;
+    
+    }
+
+    /* FOOTER SECTION */
+
+    .footer {
+        padding: 30px 10px;
+    }
+
+    .contact-information h1 {
+        font-size: 36px;
+    }
+
+    .contact-buttons {
+        gap: 8px;
+    }
+
+    .email-me {
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* SHOWCASE SECTION */
+    header {
+        display: grid;
+        grid-template-areas: 
+            "section1 section2";
+
+        img {
+            grid-area: section2;
+            margin-right: 20px;
+        }
+
+        div {
+            grid-area: section1;
+            margin-top: 25px;
+        }
+
+    }
+
+
+    /* FEATURED FORTFOLIO SECTION */
+    .featured-portfolio-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .featured-portfolio-card {
+        height: 350px;
+    }
+
+    /* FOOTER SECTION */
+    .footer {
+        display: grid;
+        grid-template-areas: 
+            "section1 section2";
+        
+        .contact-information {
+            grid-area: section2;
+            margin-top: 30px;
+        }
+
+        .copyright {
+            grid-area: section1;
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .featured-portfolio-card {
+        height: 400px;
+    }
+
+    .featured-portfolio-cards {
+        row-gap: 40px;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+    .home-content {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    /* NAVIGATION SECTION */
+    nav {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    header img {
+        width: 500px;
+    }
+
+    header div {
+        margin-top: 100px;
+    }
+
+    /* FEATURED PORTFOLIO SECTION */
+    .featured-portfolio-card {
+        height: 450px;
+    }
+
+    .featured-portfolio-card .gradient,
+    .featured-portfolio-card .descriptions {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+    }
+
+    /* Show elements on hover */
+    .featured-portfolio-card:hover .gradient,
+    .featured-portfolio-card:hover .descriptions {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    
+
+    /* FOOTER SECTION */
+    footer {
+        background-color: #EEE;
+        padding: 90px 0px;
+    }
+    
+    .footer {
+        border-radius: 15px;
+    }
+
+    nav, .footer-container, .home-content {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .copyright {
+        margin-left: 35px;
+    }
+}
