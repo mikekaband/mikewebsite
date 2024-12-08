@@ -1,0 +1,23 @@
+
+/* ----------------------------------------------------------------------------
+    INITIALIZE
+---------------------------------------------------------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: "Source Sans 3", system-ui;
+    font-weight: normal;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+h1, h2, h3 {
+    font-family: "Source Code Pro", monospace;
+    font-weight: bold;
+}
+
