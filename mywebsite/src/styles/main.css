@@ -33,6 +33,7 @@ h1, h2, h3 {
 }
 
 
+
 nav {
     flex-direction: column;
     justify-content: space-between;
@@ -63,7 +64,7 @@ nav ul.open {
     width: 100vw;
     height: 100vh;
     background-color: white; /* Ensure the background covers the screen */
-    display: flex;
+    display: block;
     flex-direction: column;
     padding-top: 150px;
     justify-content: start;
@@ -120,6 +121,54 @@ nav .menu {
     right: 1rem;
     flex-direction: column;
 }
+
+
+/* FOOTER MENU */
+
+.nav-footer-menu {
+    margin-top: 60px;
+}
+.nav-footer-menu ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+}
+
+.nav-footer-menu ul li {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-footer-menu ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-footer-menu ul li a:not(.active):hover {
+    background-color: black;
+    color: white;
+}
+
+.nav-footer-menu ul li a.active {
+    background-color: black;
+    color: white;
+}
+
 
 
 /* Responsiveness */
@@ -344,7 +393,10 @@ header p span {
 /* FOOTER SECTION */
 footer {
     margin-top: 200px;
+    background-color: #EEE;
+    padding: 100px 0px 110px 0px;
 }
+
 
 .footer {
     background-color: #044BD9;
@@ -357,6 +409,10 @@ footer {
     display: grid;
     align-self: center;
     justify-content: center;
+}
+
+.contact-information a {
+    text-decoration: none;
 }
 
 .contact-information h1 {
@@ -486,6 +542,11 @@ footer {
         .copyright {
             grid-area: section1;
         }
+    }
+
+    .nav-footer-menu ul {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
     }
 
 }

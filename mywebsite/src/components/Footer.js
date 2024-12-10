@@ -1,6 +1,7 @@
 import React from "react";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import character from "./img/CharacterProfile.png";
+import { FooterMenu } from './FooterMenu';
 import '../styles/main.css';
 
 
@@ -15,12 +16,16 @@ export const Footer = () => {
                   <div className='contact-information'>
                     <h1>LET'S CONNECT</h1>
                     <div className='contact-buttons'>
-                      <button className='btn2'>
-                        LinkedIn <span><HiOutlineExternalLink size={25} /></span>
-                      </button>
-                      <button className='btn2'>
-                        GitHub <span><HiOutlineExternalLink size={25} /></span>
-                      </button>
+                      <a href="https://www.linkedin.com/in/mike-musas/" target="_blank" rel="noreferrer">
+                        <button className='btn2'>
+                          LinkedIn <span><HiOutlineExternalLink size={25} /></span>
+                        </button>
+                      </a>
+                      <a href="https://github.com/musasmike" target="_blank" rel="noreferrer">
+                        <button className='btn2'>
+                          GitHub <span><HiOutlineExternalLink size={25} /></span>
+                        </button>
+                      </a>
                     </div>
 
                     <div className='email-me'>
@@ -38,6 +43,8 @@ export const Footer = () => {
                 </div>
 
               </div>
+
+              <FooterMenu />
 
             </footer>
     );
