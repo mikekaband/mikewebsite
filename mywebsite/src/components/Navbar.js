@@ -5,6 +5,8 @@ import { HiMenuAlt3 } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
 import logo from "./img/MikeMusasLogoMarkDesign_Black.svg";
 import '../styles/main.css';
+import '../styles/portfolio.css';
+import '../styles/aboutme.css';
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -33,7 +35,7 @@ export const Navbar = () => {
                 <div
                     className="menu"
                     onClick={() => setMenuOpen(!menuOpen)}
-                >
+                    >
                     {menuOpen ? <RxCross2 size={43} /> : <HiMenuAlt3 size={43} />}
                 </div>
 
@@ -49,7 +51,9 @@ export const Navbar = () => {
                     </li>
                     <li>
                         <a 
-                            href="https://www.linkedin.com/in/mike-musas/" 
+                            href="https://www.linkedin.com/in/mike-musas/"
+                            target="_blank"
+                            rel="noreferrer"
                             onClick={closeMenu}
                         >
                             LinkedIn <span><HiOutlineExternalLink size={25} /></span>

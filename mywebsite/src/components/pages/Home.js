@@ -4,8 +4,9 @@ import profile from "../img/ProfilePicture.jpg";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { BsArrowRight } from "react-icons/bs";
 import logo from "../img/MikeMusasLogoMark Design_White.svg";
-import character from "../img/CharacterProfile.png";
 import { Link } from 'react-router-dom';
+
+
 
 const Home = () => {
     useEffect(() => {
