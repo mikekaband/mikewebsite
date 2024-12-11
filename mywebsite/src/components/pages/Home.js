@@ -46,9 +46,11 @@ const Home = () => {
                             business decision-making.
                         </p>
 
-                        <button className="btn">
-                            Let's Connect <span><HiOutlineExternalLink size={25} /></span>
-                        </button>
+                        <a href='https://www.linkedin.com/in/mike-musas/' target="_blank" rel="noreferrer">
+                          <button className="btn">
+                              Let's Connect <span><HiOutlineExternalLink size={25} /></span>
+                          </button>
+                        </a>
                     </div>
                 </div>
             </header>
@@ -122,7 +124,7 @@ const Home = () => {
             </section>
 
             {/* EXPLORE MORE BUTTON */}
-            <button className="btn">
+            <button className="btn" id='explore-more'>
                 Explore More <span><BsArrowRight size={25} /></span>
             </button>
 

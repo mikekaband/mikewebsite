@@ -1,3 +1,6 @@
+/* ----------------------------------------------------------------------------
+    INITIALIZE
+---------------------------------------------------------------------------- */
 
 * {
     margin: 0;
@@ -5,8 +8,359 @@
     box-sizing: border-box;
 }
 
-.about-me-section img {
-    width: 380px;
+.aboutme {
+    width: 100%;
+}
+
+
+/* ----------------------------------------------------------------------------
+    ABOUT ME SECTION
+---------------------------------------------------------------------------- */
+
+.about-content {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.about-title {
+    font-size: 60px;
+    padding: 30px 20px;
+}
+
+.about-me-section {
+    display: grid;
+    grid-template-areas: 
+        "section1";
+}
+
+.about-me-picture {
+    margin-bottom: 60px;
+
+}
+
+.about-me-picture img {
+    width: 340px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     border: 4px solid black;
     border-radius: 15px;
 }
+
+
+.about-me-description {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    max-width: 100%; /* Prevent it from extending beyond the viewport */
+    word-wrap: break-word; /* Ensure long words break to the next line */
+  }
+
+.about-me-description a {
+    text-decoration: none;
+}
+
+
+/* ----------------------------------------------------------------------------
+    RESUME SECTION
+---------------------------------------------------------------------------- */
+
+/* EDUCATION */
+.resume-container {
+    background-color: #CEECF2;
+    padding: 67px 20px;
+}
+
+.resume-container h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.education h2 {
+    margin: 30px 0px;
+    font-size: 40px;
+}
+
+.education section {
+    background-color: #044BD9;
+    color: white;
+    padding: 40px 25px;
+    margin: 20px 0px;
+    height: 350px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-areas: 
+        "section1"
+        "section2";
+    
+    div:nth-of-type(1) {
+        grid-area: section2;
+        margin-top: 67px;
+
+        h4 {
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+    }
+
+    div:nth-of-type(2) {
+        grid-area: section1;
+        text-align: end;
+    }
+
+}
+
+
+/* EXPERIENCES */
+
+.experiences h2 {
+    margin: 30px 0px;
+    margin-top: 160px;
+    font-size: 40px;
+}
+
+.experiences section {
+    background-color: black;
+    color: white;
+    padding: 40px 25px;
+    margin: 20px 0px;
+    height: 350px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-areas: 
+        "section1"
+        "section2";
+    
+    div:nth-of-type(1) {
+        grid-area: section2;
+        margin-top: 67px;
+
+        h4 {
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+    }
+
+    div:nth-of-type(2) {
+        grid-area: section1;
+        text-align: end;
+    }
+
+}
+
+
+/* SKILLS */
+
+.skills h2 {
+    margin: 30px 0px;
+    margin-top: 160px;
+    font-size: 40px;
+}
+
+.skills section {
+    margin-bottom: 20px;
+}
+
+.skills section div {
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px 25px;
+    height: 360px;
+}
+
+.skills section div h4 {
+    background-color: black;
+    font-size: 26px;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.skills section div ul {
+    padding-left: 50px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------
+    RESPONSIVENESS
+---------------------------------------------------------------------------- */
+
+@media screen and (max-width: 344px) {
+    .about-me-picture img {
+        width: 280px;
+    }
+
+    .about-me-description p {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    /* RESUME SECTION */
+    .education section {
+        padding: 0px 25px;
+        margin: 20px 0px;
+        height: 200px;
+        grid-template-areas: 
+            "section1 section2";
+        
+        div:nth-of-type(1) {
+            grid-area: section1;
+
+            h4 {
+                font-size: 34px;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 26px;
+            }
+        }
+
+        div:nth-of-type(2) {
+            grid-area: section2;
+            padding-top: 30px;
+            
+            p {
+                font-size: 20px;
+            }
+        }
+
+    }
+
+    .experiences section {
+        padding: 0px 25px;
+        margin: 20px 0px;
+        height: 200px;
+        grid-template-areas: 
+            "section1 section2";
+        
+        div:nth-of-type(1) {
+            grid-area: section1;
+
+            h4 {
+                font-size: 34px;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 26px;
+            }
+        }
+
+        div:nth-of-type(2) {
+            grid-area: section2;
+            padding-top: 30px;
+            
+            p {
+                font-size: 20px;
+            }
+        }
+
+    }
+
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        grid-template-areas: 
+            "section1 section1 section1"
+            "section2 section3 section4";
+
+        h2 {
+            grid-area: section1;
+        }
+
+        section:nth-of-type(1) {
+            grid-area: section2;
+        }
+
+        section:nth-of-type(2) {
+            grid-area: section3;
+        }
+
+        section:nth-of-type(3) {
+            grid-area: section4;
+        }
+
+        section div ul {
+            padding-left: 20px;
+        }
+
+        section div {
+            height: 390px;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+    /* INITIAL */
+    .about-content {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    /* ABOUT ME SECTION */
+    .about-me-section {
+        padding-right: 20px;
+        padding-left: 20px;
+        grid-template-areas: 
+            "section1 section2";
+
+        .about-me-picture {
+            grid-area: section1;
+        }
+
+        div {
+            grid-area: section2;
+            margin-top: 25px;
+        }
+
+    }
+
+    .about-me-section img {
+        width: 450px;
+        margin-right: 20px;
+
+    }
+
+    /* RESUME SECTION */
+    .resume-container {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .resume-container {
+        border-radius: 15px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .skills section div ul {
+        padding-left: 30px;
+    }
+
+}
+
+
