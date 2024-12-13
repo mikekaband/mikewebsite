@@ -1,6 +1,10 @@
 // AboutPage.js
 import React from 'react';
 import myphoto from "../img/MikeMusasPhoto.png";
+import birdposter from "../img/birdarts.png";
+import hobbit from "../img/thehobbit.png";
+import mockingbird from "../img/mockingbird.png";
+import lesmiserables from "../img/lesmiserables.png";
 import { HiOutlineExternalLink } from "react-icons/hi";
 
 const AboutMe = () => {
@@ -191,51 +195,62 @@ const AboutMe = () => {
 
       {/* HOBBIES */}
       <section className='hobbies'>
-        <h1>Hobbies & Interests</h1>
-        <p>Explore amazing dashboards built with a variety of tools such as Tableau Desktop, Looker Studio, Plotly dash, etc. 
-        These projects includes topics such as data visualization, machine learning, data analysis.</p>
+        <div className='hobbies-container'>
+          <h1>Hobbies & Interests</h1>
+          <p>Explore amazing dashboards built with a variety of tools such as Tableau Desktop, Looker Studio, Plotly dash, etc. 
+          These projects includes topics such as data visualization, machine learning, data analysis.</p>
 
-        <section className='design-hobbies'>
-          <div></div>
-          <div>
-            <h4>The text</h4>
-            <a href='https://www.linkedin.com/in/mike-musas/' target="_blank" rel="noreferrer">
-              <button className="btn">
-                  Design Works <span><HiOutlineExternalLink size={25} /></span>
-              </button>
-            </a>
-          </div>
-        </section>
+          <section className='design-hobbies'>
+            <div className='bird-poster'>
+              <img src={birdposter} alt="Bird Posters"/>
+            </div>
+            <div className='bird-poster-description'>
+              <p>
+                Explore amazing dashboards built with a variety of tools such as Tableau Desktop, Looker Studio, Plotly dash, etc. 
+                These projects includes topics such as data visualization, machine learning, data analysis.
+              </p>
 
-        <section className='other-hobbies'>
-            <section>
-              <div>
-                <h4>Sports</h4>
-                <div>
-
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <div>
-                <h4>Favorite Books</h4>
-                <div>
-
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <div>
-                <h4>Broadway</h4>
-                <div>
-
-                </div>
-              </div>
-            </section>
-
+              <a href='https://www.linkedin.com/in/mike-musas/' target="_blank" rel="noreferrer">
+                <button className="btn">
+                    Design Works <span><HiOutlineExternalLink size={25} /></span>
+                </button>
+              </a>
+            </div>
           </section>
+
+          <section className='other-hobbies'>
+              <section>
+                <div className='sports'>
+                  <h4>Sports</h4>
+                  <div>
+
+                  </div>
+                </div>
+              </section>
+
+              <section>
+                <div className='books'>
+                  <h4>Favorite Books</h4>
+                  <div>
+                    <img src={hobbit} alt="The Hobbit"/>
+                    <img src={mockingbird} alt="To Kill a Mockingbird"/>
+
+                  </div>
+                </div>
+              </section>
+
+              <section>
+                <div className='broadway'>
+                  <h4>Broadway</h4>
+                  <div>
+                    <img src={lesmiserables} alt="Les Miserables"/>
+                  </div>
+                </div>
+              </section>
+
+            </section>
+
+          </div>
 
       </section>
       

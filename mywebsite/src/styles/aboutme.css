@@ -197,6 +197,95 @@
 
 
 
+/* ----------------------------------------------------------------------------
+    HOBBIES SECTION
+---------------------------------------------------------------------------- */
+
+.hobbies {
+    margin-top: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hobbies-container h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.hobbies-container p:nth-of-type(1) {
+    font-size: 18px;
+}
+
+.design-hobbies {
+    margin-top: 70px;
+}
+
+.bird-poster {
+    background-color: #CEECF2;
+    border-radius: 15px;
+    padding: 50px 20px;
+}
+
+.bird-poster img {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bird-poster-description {
+    p {
+        font-size: 40px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.other-hobbies {
+    margin-top: 160px;
+}
+
+.sports, .books, .broadway {
+    height: 370px;
+    padding: 30px 10px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+
+    h4 {
+        background-color: black;
+        font-size: 26px;
+        text-align: center;
+        font-weight: 600;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+.sports {
+    background-color: #CEECF2;
+}
+
+.books {
+    background-color: #80C7F2;
+}
+
+.broadway {
+    background-color: #CEECF2;
+}
+
+
 
 /* ----------------------------------------------------------------------------
     RESPONSIVENESS
@@ -311,12 +400,30 @@
         }
     }
 
+    /* HOBBIES */
+    .design-hobbies {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .other-hobbies {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
 }
 
 
 @media screen and (min-width: 1024px) {
     /* INITIAL */
     .about-content {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .hobbies-container {
         max-width: 1024px;
         margin: 0 auto;
     }
@@ -359,6 +466,11 @@
 
     .skills section div ul {
         padding-left: 30px;
+    }
+
+    /* HOBBIES */
+    .other-hobbies {
+        grid-template-columns: repeat(3, 1fr);
     }
 
 }
