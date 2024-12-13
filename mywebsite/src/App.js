@@ -13,6 +13,7 @@ import CrimeAnalysis from './components/pages/CrimeAnalysis';
 import RealEstate from './components/pages/RealEstate';
 import ElectricVehicles from './components/pages/ElectricVehicles';
 import PlasticPollution from './components/pages/PlasticPollution';
+import BreastCancer from './components/pages/BreastCancer';
 
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
         <Route path='/realestate' element={<RealEstate />} />
         <Route path='/electricvehicles' element={<ElectricVehicles />} />
         <Route path='/plasticpollution' element={<PlasticPollution />} />
+        <Route path='/breastcancer' element={<BreastCancer />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -6,7 +6,7 @@ const RealEstate = () => {
     const tableauUrl = "https://public.tableau.com/views/RealEstateSalesDashboard_17228429219500/RealEstateSalesDashboard-SaleValue";  // Replace with your Tableau embed URL
     const options = {
         width: '1300px',
-        height: '850px',
+        height: '900px',
         hideTabs: true,  // Optional: Hides Tableau tabs at the top
         hideToolbar: false,  // Optional: Shows/hides Tableau toolbar
     };

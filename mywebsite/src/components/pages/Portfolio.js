@@ -92,7 +92,7 @@ const Portfolio = () => {
 
         {/* PORTFOLIO CARDS SECTION */}
         <section className='portfolio-cards'>
-          <Link to="/crimeanalysis" className='portfolio-card' onClick={handleScrollToTop}>
+          <Link to="/crimeanalysis" className='portfolio-card' id='crime-analysis' onClick={handleScrollToTop}>
               
               <div className='gradient'></div>
               <div className='descriptions'>
@@ -106,7 +106,7 @@ const Portfolio = () => {
               
           </Link>
 
-          <Link to="/realestate" className='portfolio-card' onClick={handleScrollToTop}>
+          <Link to="/realestate" className='portfolio-card' id='real-estate' onClick={handleScrollToTop}>
               
               <div className='gradient'></div>
               <div className='descriptions'>
@@ -120,7 +120,7 @@ const Portfolio = () => {
               
           </Link>
 
-          <Link to="/electricvehicles" className='portfolio-card' onClick={handleScrollToTop}>
+          <Link to="/electricvehicles" className='portfolio-card' id='electric-vehicles' onClick={handleScrollToTop}>
               
               <div className='gradient'></div>
               <div className='descriptions'>
@@ -134,7 +134,7 @@ const Portfolio = () => {
               
           </Link>
 
-          <Link to="/plasticpollution" className='portfolio-card' onClick={handleScrollToTop}>
+          <Link to="/plasticpollution" className='portfolio-card' id='plastic-pollution' onClick={handleScrollToTop}>
               
               <div className='gradient'></div>
               <div className='descriptions'>
@@ -148,12 +148,12 @@ const Portfolio = () => {
               
           </Link>
           
-          {/* <Link to="/portfolio" className='portfolio-card' onClick={handleScrollToTop}>
+          {/* <Link to="https://colab.research.google.com/drive/18KpoEMDzIeqq-Ark_xnQb65gDaBWZbaT?usp=sharing" className='portfolio-card' onClick={handleScrollToTop}>
               
               <div className='gradient'></div>
               <div className='descriptions'>
                 <div>
-                  <h4>Project Title 1</h4>
+                  <h4>Breast Cancer Prediction</h4>
                   <p>Dashboard</p>
                 </div>
                 
@@ -219,19 +219,19 @@ const Portfolio = () => {
               
           </Link>
 
-          {/* <Link to="/portfolio" className='portfolio-card' onClick={handleScrollToTop}>
+          <Link to="/breastcancer" className='portfolio-card' onClick={handleScrollToTop}>
               
               <div className='gradient'></div>
               <div className='descriptions'>
                 <div>
-                  <h4>Project Title 1</h4>
-                  <p>Dashboard</p>
+                  <h4>Breast Cancer Detection Report</h4>
+                  <p>Machine Learning</p>
                 </div>
                 
                 <img src={logo} alt="Mike Logo" width={50} fill="white"/>
               </div>
               
-          </Link> */}
+          </Link>
 
 
         </section>

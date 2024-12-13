@@ -110,6 +110,34 @@ h1, h2, h3 {
     background-position: center;
 }
 
+#crime-analysis {
+    background-image: url("../components/img/crimeanalysis.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#real-estate {
+    background-image: url("../components/img/realestate.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#electric-vehicles {
+    background-image: url("../components/img/electricvehicles.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#plastic-pollution {
+    background-image: url("../components/img/plasticpollution.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .portfolio-card:nth-of-type(2),
 .portfolio-card:nth-of-type(4),
 .portfolio-card:nth-of-type(6) {
@@ -142,13 +170,13 @@ h1, h2, h3 {
 }
 
 .project h1 {
-    font-size: 44px;
+    font-size: 50px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
 .project h3 {
-    font-size: 30px;
+    font-size: 34px;
     margin-bottom: 20px;
 }
 
@@ -159,6 +187,11 @@ h1, h2, h3 {
 
 .tableau-embed {
     margin-top: 40px;
+    margin-bottom: 150px;
+}
+
+.explore-more {
+    font-size: 34px;
 }
 
 

@@ -535,6 +535,7 @@ footer {
     /* SHOWCASE SECTION */
     header {
         display: grid;
+        gap: 10px;
         grid-template-areas: 
             "section1 section2";
 
@@ -599,6 +600,11 @@ footer {
 
 
 @media screen and (min-width: 1024px) {
+    /* SHOWCASE */
+    header {
+        gap: 70px;
+    }
+
     .home-content {
         margin-right: 20px;
         margin-left: 20px;

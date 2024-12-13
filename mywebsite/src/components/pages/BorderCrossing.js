@@ -6,7 +6,7 @@ const BorderCrossing = () => {
     const tableauUrl = "https://public.tableau.com/views/USBorderCrossingEntryDashboard/USBorderCrossingsReport";  // Replace with your Tableau embed URL
     const options = {
         width: '1300px',
-        height: '850px',
+        height: '950px',
         hideTabs: true,  // Optional: Hides Tableau tabs at the top
         hideToolbar: false,  // Optional: Shows/hides Tableau toolbar
     };

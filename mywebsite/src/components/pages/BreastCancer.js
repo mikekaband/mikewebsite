@@ -1,20 +1,13 @@
 import React from 'react';
-import TableauEmbed from './TableauEmbed';
 
-const CrimeAnalysis = () => {
+const BreastCancer = () => {
 
-    const tableauUrl = "https://public.tableau.com/views/Crimes-CityofLosAngeles/Dashboard2";  // Replace with your Tableau embed URL
-    const options = {
-        width: '1300px',
-        height: '900px',
-        hideTabs: true,  // Optional: Hides Tableau tabs at the top
-        hideToolbar: false,  // Optional: Shows/hides Tableau toolbar
-    };
+    
 
     return (
         <div className='project'>
             <div className='container'>
-                <h1>Crime Analysis (City of Los Angeles)</h1>
+                <h1>Breast Cancer Detection Report</h1>
 
                 <h3>Executive Summary</h3>
 
@@ -36,8 +29,13 @@ const CrimeAnalysis = () => {
                     distractions, has also emerged as a critical concern in recent years.
                 </p>
 
-                <div className="tableau-embed">
-                    <TableauEmbed url={tableauUrl} options={options} />
+                <div className="jupyter-embed">
+                <iframe 
+                    src="https://colab.research.google.com/drive/your_notebook_id?usp=sharing" 
+                    width="100%" 
+                    height="800" 
+                    title="Interactive Breast Cancer Data Analysis Notebook">
+                </iframe>
                 </div>
                 
 
@@ -47,5 +45,5 @@ const CrimeAnalysis = () => {
 };
 
 
-export default CrimeAnalysis;
+export default BreastCancer;
 

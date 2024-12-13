@@ -6,7 +6,7 @@ const MeteoriteLandings = () => {
     const tableauUrl = "https://public.tableau.com/views/Meteorite_Landings_Dashboard/MeteoriteLandingsAcrosstheWorld";  // Replace with your Tableau embed URL
     const options = {
         width: '1300px',
-        height: '1100px',
+        height: '1200px',
         hideTabs: true,  // Optional: Hides Tableau tabs at the top
         hideToolbar: false,  // Optional: Shows/hides Tableau toolbar
     };
