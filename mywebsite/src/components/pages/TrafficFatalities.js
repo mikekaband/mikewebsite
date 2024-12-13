@@ -72,6 +72,9 @@ const TrafficFatalities = () => {
                 <br />
                 <br />
                 <br />
+                <br />
+                <br />
+                <br />
 
 
                 {/* EXPLORE MORE PROJECTS */}
@@ -106,13 +109,13 @@ const TrafficFatalities = () => {
                     
                 </Link>
 
-                <Link to="/bordercrossing" className='portfolio-card' id='border-crossing' onClick={handleScrollToTop}>
-                    
+                <Link to="https://github.com/musasmike/applied_data_science_capstone" className='portfolio-card' id='spacex' target="_blank" rel="noreferrer">
+                  
                     <div className='gradient'></div>
                     <div className='descriptions'>
                         <div>
-                        <h4>US Border Crossing</h4>
-                        <p>Dashboard</p>
+                        <h4>SpaceX Rocket Landings</h4>
+                        <p>Machine Learning</p>
                         </div>
                         
                         <img src={logo} alt="Mike Logo" width={50} fill="white"/>

@@ -112,13 +112,13 @@ const Home = () => {
                   
               </Link>
 
-              <Link to="/bordercrossing" className='featured-portfolio-card' onClick={handleScrollToTop}>
+              <Link to="https://github.com/musasmike/applied_data_science_capstone" className='featured-portfolio-card' target="_blank" rel="noreferrer">
                   
                   <div className='gradient'></div>
                   <div className='descriptions'>
                     <div>
-                      <h4>US Border Crossing</h4>
-                      <p>Dashboard</p>
+                      <h4>SpaceX Rocket Landing Predictions</h4>
+                      <p>Machine Learning</p>
                     </div>
                     
                     <img src={logo} alt="Mike Logo" width={50} fill="white"/>

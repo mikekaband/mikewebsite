@@ -1,5 +1,7 @@
 import React from 'react';
 import TableauEmbed from './TableauEmbed';
+import { Link } from 'react-router-dom';
+import logo from "../img/MikeMusasLogoMark Design_White.svg";
 
 const BorderCrossing = () => {
 
@@ -11,34 +13,88 @@ const BorderCrossing = () => {
         hideToolbar: false,  // Optional: Shows/hides Tableau toolbar
     };
 
+    const handleScrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
+
     return (
         <div className='project'>
             <div className='container'>
                 <h1>US Border Crossing Entry with Canada and Mexico</h1>
 
-                <h3>Executive Summary</h3>
+                <h3>Overview</h3>
 
                 <p>
-                    Traffic mortality has been a public health issue in the United States, 
-                    with thousands of individuals dying each year due to various factors 
-                    contributing to road accidents. This project aims to identify the 
-                    leading causes of traffic fatalities and recommend effective strategies 
-                    to reduce the number of deaths on American roads.
+                    This dashboard provides a comprehensive overview of border crossings between 
+                    the United States, Canada, and Mexico from 1996 to 2023.
                 </p>
-                <p>
-                    The project will examine the leading contributors to traffic fatalities, 
-                    including speeding, drunk driving, and distracted driving. Speeding 
-                    remains one of the most significant factors, as higher speeds reduce the 
-                    driver's ability to react to sudden changes and increase the severity of 
-                    accidents. Drunk driving is another major cause, with impaired judgment 
-                    and delayed reaction times leading to a higher likelihood of crashes. 
-                    Distracted driving, often due to mobile phone use or other in-vehicle 
-                    distractions, has also emerged as a critical concern in recent years.
-                </p>
+                
+                <br />
+                <br />
 
                 <div className="tableau-embed">
                     <TableauEmbed url={tableauUrl} options={options} />
                 </div>
+
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+
+                {/* EXPLORE MORE PROJECTS */}
+                <h2 className='explore-more'>Explore More Projects</h2>
+
+                <section className='portfolio-cards'>
+                    <Link to="/crimeanalysis" className='portfolio-card' id='crime-analysis' onClick={handleScrollToTop}>
+                
+                        <div className='gradient'></div>
+                        <div className='descriptions'>
+                            <div>
+                            <h4>Crime Analysis</h4>
+                            <p>Dashboard</p>
+                            </div>
+                            
+                            <img src={logo} alt="Mike Logo" width={50} fill="white"/>
+                        </div>
+                        
+                    </Link>
+
+                    <Link to="/realestate" className='portfolio-card' id='real-estate' onClick={handleScrollToTop}>
+              
+                        <div className='gradient'></div>
+                        <div className='descriptions'>
+                            <div>
+                            <h4>Real Estate Analysis</h4>
+                            <p>Dashboard</p>
+                            </div>
+                            
+                            <img src={logo} alt="Mike Logo" width={50} fill="white"/>
+                        </div>
+                        
+                    </Link>
+
+                    <Link to="/electricvehicles" className='portfolio-card' id='electric-vehicles' onClick={handleScrollToTop}>
+              
+                        <div className='gradient'></div>
+                        <div className='descriptions'>
+                            <div>
+                            <h4>Electric Vehicles</h4>
+                            <p>Dashboard</p>
+                            </div>
+                            
+                            <img src={logo} alt="Mike Logo" width={50} fill="white"/>
+                        </div>
+                        
+                    </Link>
+
+                </section>
                 
 
             </div>

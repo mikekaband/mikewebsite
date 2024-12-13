@@ -198,8 +198,7 @@ const AboutMe = () => {
       <section className='hobbies'>
         <div className='hobbies-container'>
           <h1>Hobbies & Interests</h1>
-          <p>Explore amazing dashboards built with a variety of tools such as Tableau Desktop, Looker Studio, Plotly dash, etc. 
-          These projects includes topics such as data visualization, machine learning, data analysis.</p>
+          
 
           <section className='design-hobbies'>
             <div className='bird-poster'>
@@ -207,8 +206,9 @@ const AboutMe = () => {
             </div>
             <div className='bird-poster-description'>
               <p>
-                Explore amazing dashboards built with a variety of tools such as Tableau Desktop, Looker Studio, Plotly dash, etc. 
-                These projects includes topics such as data visualization, machine learning, data analysis.
+                When I'm not immersed in data, I explore my creative side through poster 
+                design arts, crafting visually striking and meaningful pieces that reflect my passion 
+                for aesthetics and storytelling.
               </p>
 
               <a href='https://www.behance.net/mikemusaskaband' target="_blank" rel="noreferrer">

@@ -214,7 +214,7 @@ nav .menu {
     }
 
     nav {
-        max-width: 1024px;
+        max-width: 1400px;
         margin: 0 auto;
         
     }
@@ -400,7 +400,7 @@ header a {
 }
 
 .featured-portfolio-card:nth-of-type(4) {
-    background-image: url("../components/img/bordercrossing.svg");
+    background-image: url("../components/img/spacex.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -656,7 +656,7 @@ footer {
     }
 
     nav, .footer-container, .home-content {
-        max-width: 1300px;
+        max-width: 1400px;
         margin: 0 auto;
     }
 

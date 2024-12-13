@@ -17,8 +17,7 @@ const Portfolio = () => {
         <section className='portfolio-title'>
           <hr/>
           <h1>FEATURED PORTFOLIO</h1>
-          <p>Explore amazing dashboards built with a variety of tools such as Tableau Desktop, Looker Studio, Plotly dash, etc. 
-          These projects includes topics such as data visualization, machine learning, data analysis.</p>
+          <p>Explore a curated collection of my most impactful projects, showcasing creativity, technical expertise, and problem-solving abilities across diverse domains.</p>
         </section>
 
         {/* PORTFOLIO CARDS SECTION */}
@@ -28,7 +27,7 @@ const Portfolio = () => {
               <div className='gradient'></div>
               <div className='descriptions'>
                 <div>
-                  <h4>U.S.A. Road Traffic Fatalities</h4>
+                  <h4>Road Traffic Fatalities</h4>
                   <p>Dashboard</p>
                 </div>
                 <img src={logo} alt="Mike Logo" width={50} fill="white"/>
@@ -64,13 +63,13 @@ const Portfolio = () => {
               
           </Link>
 
-          <Link to="/bordercrossing" className='portfolio-card' id='border-crossing' onClick={handleScrollToTop}>
-              
+          <Link to="https://github.com/musasmike/applied_data_science_capstone" className='portfolio-card' id='spacex' target="_blank" rel="noreferrer">
+                  
               <div className='gradient'></div>
               <div className='descriptions'>
                 <div>
-                  <h4>US Border Crossing</h4>
-                  <p>Dashboard</p>
+                  <h4>SpaceX Rocket Landings</h4>
+                  <p>Machine Learning</p>
                 </div>
                 
                 <img src={logo} alt="Mike Logo" width={50} fill="white"/>
@@ -86,8 +85,7 @@ const Portfolio = () => {
         <section className='portfolio-title'>
           <hr/>
           <h1>DATA VISUALIZATION</h1>
-          <p>Explore amazing dashboards built with a variety of tools such as Tableau Desktop, Looker Studio, Plotly dash, etc. 
-          These projects includes topics such as data visualization, machine learning, data analysis.</p>
+          <p>Dive into dynamic and insightful visual representations of complex data, designed to tell compelling stories and drive informed decision-making.</p>
         </section>
 
         {/* PORTFOLIO CARDS SECTION */}
@@ -125,7 +123,7 @@ const Portfolio = () => {
               <div className='gradient'></div>
               <div className='descriptions'>
                 <div>
-                  <h4>Electric Vehicle Population</h4>
+                  <h4>Electric Vehicles</h4>
                   <p>Dashboard</p>
                 </div>
                 
@@ -148,19 +146,19 @@ const Portfolio = () => {
               
           </Link>
           
-          {/* <Link to="https://colab.research.google.com/drive/18KpoEMDzIeqq-Ark_xnQb65gDaBWZbaT?usp=sharing" className='portfolio-card' onClick={handleScrollToTop}>
+          <Link to="/bordercrossing" className='portfolio-card' id='border-crossing' onClick={handleScrollToTop}>
               
               <div className='gradient'></div>
               <div className='descriptions'>
                 <div>
-                  <h4>Breast Cancer Prediction</h4>
+                  <h4>Border Crossing</h4>
                   <p>Dashboard</p>
                 </div>
                 
                 <img src={logo} alt="Mike Logo" width={50} fill="white"/>
               </div>
               
-          </Link> */}
+          </Link>
 
           {/* <Link to="/portfolio" className='portfolio-card' onClick={handleScrollToTop}>
               
@@ -185,27 +183,13 @@ const Portfolio = () => {
         <section className='portfolio-title'>
           <hr/>
           <h1>DATA ANALYTICS & MACHINE LEARNING</h1>
-          <p>Explore amazing dashboards built with a variety of tools such as Tableau Desktop, Looker Studio, Plotly dash, etc. 
-          These projects includes topics such as data visualization, machine learning, data analysis.</p>
+          <p>Discover how advanced algorithms and analytical techniques are leveraged to uncover patterns, build predictive models, and solve real-world problems effectively.</p>
         </section>
 
         {/* PORTFOLIO CARDS SECTION */}
         <section className='portfolio-cards'>
-          <Link to="https://github.com/musasmike/applied_data_science_capstone" className='portfolio-card'>
-              
-              <div className='gradient'></div>
-              <div className='descriptions'>
-                <div>
-                  <h4>SpaceX Rocket Landing Predictions</h4>
-                  <p>Machine Learning</p>
-                </div>
-                
-                <img src={logo} alt="Mike Logo" width={50} fill="white"/>
-              </div>
-              
-          </Link>
 
-          <Link to="https://github.com/musasmike/beer_data_analysis" className='portfolio-card'>
+          <Link to="https://github.com/musasmike/beer_data_analysis" className='portfolio-card' id='beer' target="_blank" rel="noreferrer">
               
               <div className='gradient'></div>
               <div className='descriptions'>
@@ -219,12 +203,12 @@ const Portfolio = () => {
               
           </Link>
 
-          <Link to="/breastcancer" className='portfolio-card' onClick={handleScrollToTop}>
+          <Link to="https://github.com/mikekaband/breastcancer" className='portfolio-card' id='breast-cancer' target="_blank" rel="noreferrer">
               
               <div className='gradient'></div>
               <div className='descriptions'>
                 <div>
-                  <h4>Breast Cancer Detection Report</h4>
+                  <h4>Breast Cancer Detection</h4>
                   <p>Machine Learning</p>
                 </div>
                 
