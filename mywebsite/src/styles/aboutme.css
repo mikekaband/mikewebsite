@@ -424,12 +424,12 @@
 @media screen and (min-width: 1024px) {
     /* INITIAL */
     .about-content {
-        max-width: 1024px;
+        max-width: 1300px;
         margin: 0 auto;
     }
 
     .hobbies-container {
-        max-width: 1024px;
+        max-width: 1300px;
         margin: 0 auto;
     }
 
@@ -459,7 +459,7 @@
 
     /* RESUME SECTION */
     .resume-container {
-        max-width: 1024px;
+        max-width: 1300px;
         margin: 0 auto;
     }
 

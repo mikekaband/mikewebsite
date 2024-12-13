@@ -82,6 +82,33 @@ h1, h2, h3 {
     background-color: #CEECF2;
 }
 
+#road-traffic {
+    background-image: url("../components/img/roadtraffic.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#superstore {
+    background-image: url("../components/img/superstore.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#meteorite-landings {
+    background-image: url("../components/img/meteoritelandings.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#border-crossing {
+    background-image: url("../components/img/bordercrossing.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 .portfolio-card:nth-of-type(2),
 .portfolio-card:nth-of-type(4),
@@ -102,6 +129,42 @@ h1, h2, h3 {
 }
 
 
+/* ----------------------------------------------------------------------------
+    DASHBOARDS
+---------------------------------------------------------------------------- */
+.container {
+    padding: 0px 20px;
+}
+
+.tableau-embed-landings {
+    display: block;
+    margin-bottom: 450px;
+}
+
+.project h1 {
+    font-size: 44px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.project h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.project p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.tableau-embed {
+    margin-top: 40px;
+}
+
+
+/* ----------------------------------------------------------------------------
+    RESPONSIVE SECTION
+---------------------------------------------------------------------------- */
 /* RESPONSIVE SECTION */
 
 @media screen and (max-width: 344px) {
@@ -143,7 +206,7 @@ h1, h2, h3 {
 @media screen and (min-width: 1024px) {
 
     .container {
-        max-width: 1024px;
+        max-width: 1300px;
         margin: 0 auto;
     }
 

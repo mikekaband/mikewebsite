@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom';
 import logo from "../img/MikeMusasLogoMark Design_White.svg";
 
 const Portfolio = () => {
+
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+
   return (
     <div>
       <div className='container'>
@@ -17,12 +23,25 @@ const Portfolio = () => {
 
         {/* PORTFOLIO CARDS SECTION */}
         <section className='portfolio-cards'>
-          <Link to="/portfolio" className='portfolio-card'>
+          <Link to="/trafficfatalities" className='portfolio-card' id='road-traffic' onClick={handleScrollToTop}>
               
               <div className='gradient'></div>
               <div className='descriptions'>
                 <div>
-                  <h4>Project Title 1</h4>
+                  <h4>U.S.A. Road Traffic Fatalities</h4>
+                  <p>Dashboard</p>
+                </div>
+                <img src={logo} alt="Mike Logo" width={50} fill="white"/>
+              </div>
+              
+          </Link>
+
+          <Link to="/superstoresales" className='portfolio-card' id='superstore' onClick={handleScrollToTop}>
+              
+              <div className='gradient'></div>
+              <div className='descriptions'>
+                <div>
+                  <h4>Super Store Sales</h4>
                   <p>Dashboard</p>
                 </div>
                 
@@ -31,12 +50,12 @@ const Portfolio = () => {
               
           </Link>
 
-          <Link to="/portfolio" className='portfolio-card'>
+          <Link to="/meteoritelandings" className='portfolio-card' id='meteorite-landings' onClick={handleScrollToTop}>
               
               <div className='gradient'></div>
               <div className='descriptions'>
                 <div>
-                  <h4>Project Title 1</h4>
+                  <h4>Meteorite Landings</h4>
                   <p>Dashboard</p>
                 </div>
                 
@@ -45,26 +64,12 @@ const Portfolio = () => {
               
           </Link>
 
-          <Link to="/portfolio" className='portfolio-card'>
+          <Link to="/bordercrossing" className='portfolio-card' id='border-crossing' onClick={handleScrollToTop}>
               
               <div className='gradient'></div>
               <div className='descriptions'>
                 <div>
-                  <h4>Project Title 1</h4>
-                  <p>Dashboard</p>
-                </div>
-                
-                <img src={logo} alt="Mike Logo" width={50} fill="white"/>
-              </div>
-              
-          </Link>
-
-          <Link to="/portfolio" className='portfolio-card'>
-              
-              <div className='gradient'></div>
-              <div className='descriptions'>
-                <div>
-                  <h4>Project Title 1</h4>
+                  <h4>US Border Crossing</h4>
                   <p>Dashboard</p>
                 </div>
                 
@@ -87,12 +92,12 @@ const Portfolio = () => {
 
         {/* PORTFOLIO CARDS SECTION */}
         <section className='portfolio-cards'>
-          <Link to="/portfolio" className='portfolio-card'>
+          <Link to="/crimeanalysis" className='portfolio-card' onClick={handleScrollToTop}>
               
               <div className='gradient'></div>
               <div className='descriptions'>
                 <div>
-                  <h4>Project Title 1</h4>
+                  <h4>Crime Analysis</h4>
                   <p>Dashboard</p>
                 </div>
                 
@@ -101,12 +106,12 @@ const Portfolio = () => {
               
           </Link>
 
-          <Link to="/portfolio" className='portfolio-card'>
+          <Link to="/realestate" className='portfolio-card' onClick={handleScrollToTop}>
               
               <div className='gradient'></div>
               <div className='descriptions'>
                 <div>
-                  <h4>Project Title 1</h4>
+                  <h4>Real Estate Analysis</h4>
                   <p>Dashboard</p>
                 </div>
                 
@@ -115,12 +120,12 @@ const Portfolio = () => {
               
           </Link>
 
-          <Link to="/portfolio" className='portfolio-card'>
+          <Link to="/electricvehicles" className='portfolio-card' onClick={handleScrollToTop}>
               
               <div className='gradient'></div>
               <div className='descriptions'>
                 <div>
-                  <h4>Project Title 1</h4>
+                  <h4>Electric Vehicle Population</h4>
                   <p>Dashboard</p>
                 </div>
                 
@@ -129,12 +134,12 @@ const Portfolio = () => {
               
           </Link>
 
-          <Link to="/portfolio" className='portfolio-card'>
+          <Link to="/plasticpollution" className='portfolio-card' onClick={handleScrollToTop}>
               
               <div className='gradient'></div>
               <div className='descriptions'>
                 <div>
-                  <h4>Project Title 1</h4>
+                  <h4>Plastic Pollution Analysis</h4>
                   <p>Dashboard</p>
                 </div>
                 
@@ -143,7 +148,7 @@ const Portfolio = () => {
               
           </Link>
           
-          <Link to="/portfolio" className='portfolio-card'>
+          {/* <Link to="/portfolio" className='portfolio-card' onClick={handleScrollToTop}>
               
               <div className='gradient'></div>
               <div className='descriptions'>
@@ -155,9 +160,9 @@ const Portfolio = () => {
                 <img src={logo} alt="Mike Logo" width={50} fill="white"/>
               </div>
               
-          </Link>
+          </Link> */}
 
-          <Link to="/portfolio" className='portfolio-card'>
+          {/* <Link to="/portfolio" className='portfolio-card' onClick={handleScrollToTop}>
               
               <div className='gradient'></div>
               <div className='descriptions'>
@@ -169,7 +174,7 @@ const Portfolio = () => {
                 <img src={logo} alt="Mike Logo" width={50} fill="white"/>
               </div>
               
-          </Link>
+          </Link> */}
           
 
         </section>
@@ -186,13 +191,13 @@ const Portfolio = () => {
 
         {/* PORTFOLIO CARDS SECTION */}
         <section className='portfolio-cards'>
-          <Link to="/portfolio" className='portfolio-card'>
+          <Link to="https://github.com/musasmike/applied_data_science_capstone" className='portfolio-card'>
               
               <div className='gradient'></div>
               <div className='descriptions'>
                 <div>
-                  <h4>Project Title 1</h4>
-                  <p>Dashboard</p>
+                  <h4>SpaceX Rocket Landing Predictions</h4>
+                  <p>Machine Learning</p>
                 </div>
                 
                 <img src={logo} alt="Mike Logo" width={50} fill="white"/>
@@ -200,13 +205,13 @@ const Portfolio = () => {
               
           </Link>
 
-          <Link to="/portfolio" className='portfolio-card'>
+          <Link to="https://github.com/musasmike/beer_data_analysis" className='portfolio-card'>
               
               <div className='gradient'></div>
               <div className='descriptions'>
                 <div>
-                  <h4>Project Title 1</h4>
-                  <p>Dashboard</p>
+                  <h4>Beer Data Analysis</h4>
+                  <p>Data Analysis</p>
                 </div>
                 
                 <img src={logo} alt="Mike Logo" width={50} fill="white"/>
@@ -214,7 +219,7 @@ const Portfolio = () => {
               
           </Link>
 
-          <Link to="/portfolio" className='portfolio-card'>
+          {/* <Link to="/portfolio" className='portfolio-card' onClick={handleScrollToTop}>
               
               <div className='gradient'></div>
               <div className='descriptions'>
@@ -226,7 +231,7 @@ const Portfolio = () => {
                 <img src={logo} alt="Mike Logo" width={50} fill="white"/>
               </div>
               
-          </Link>
+          </Link> */}
 
 
         </section>

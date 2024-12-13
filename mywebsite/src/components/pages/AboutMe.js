@@ -211,7 +211,7 @@ const AboutMe = () => {
                 These projects includes topics such as data visualization, machine learning, data analysis.
               </p>
 
-              <a href='https://www.linkedin.com/in/mike-musas/' target="_blank" rel="noreferrer">
+              <a href='https://www.behance.net/mikemusaskaband' target="_blank" rel="noreferrer">
                 <button className="btn">
                     Design Works <span><HiOutlineExternalLink size={25} /></span>
                 </button>

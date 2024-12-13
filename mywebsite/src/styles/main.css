@@ -21,6 +21,10 @@ h1, h2, h3 {
     font-weight: bold;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 
 
@@ -374,15 +378,32 @@ header a {
     border-radius: 15px;
 }
 
-.featured-portfolio-card:nth-of-type(1),
 .featured-portfolio-card:nth-of-type(3) {
-    background-color: #CEECF2;
+    background-image: url("../components/img/meteoritelandings.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
+.featured-portfolio-card:nth-of-type(1) {
+    background-image: url("../components/img/roadtraffic.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
-.featured-portfolio-card:nth-of-type(2),
+.featured-portfolio-card:nth-of-type(2) {
+    background-image: url("../components/img/superstore.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .featured-portfolio-card:nth-of-type(4) {
-    background-color: #80C7F2;
+    background-image: url("../components/img/bordercrossing.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .featured-portfolio-card .descriptions {
@@ -629,7 +650,7 @@ footer {
     }
 
     nav, .footer-container, .home-content {
-        max-width: 1024px;
+        max-width: 1300px;
         margin: 0 auto;
     }
 
@@ -637,3 +658,6 @@ footer {
         margin-left: 35px;
     }
 }
+
+
+

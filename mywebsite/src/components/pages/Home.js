@@ -27,6 +27,11 @@ const Home = () => {
         }
     }, []); // Run only once after the initial render
 
+
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
     return (
         <div>
           <div className='home-content'>
@@ -65,12 +70,12 @@ const Home = () => {
 
             {/* PORTFOLIO CARDS SECTION */}
             <section className='featured-portfolio-cards'>
-              <Link to="/portfolio" className='featured-portfolio-card'>
+              <Link to="/trafficfatalities" className='featured-portfolio-card' onClick={handleScrollToTop}>
                   
                   <div className='gradient'></div>
                   <div className='descriptions'>
                     <div>
-                      <h4>Project Title 1</h4>
+                      <h4>U.S.A. Road Traffic Fatalities</h4>
                       <p>Dashboard</p>
                     </div>
                     
@@ -79,12 +84,12 @@ const Home = () => {
                   
               </Link>
 
-              <Link to="/portfolio" className='featured-portfolio-card'>
+              <Link to="/superstoresales" className='featured-portfolio-card' onClick={handleScrollToTop}>
                   
                   <div className='gradient'></div>
                   <div className='descriptions'>
                     <div>
-                      <h4>Project Title 1</h4>
+                      <h4>Super Store Sales</h4>
                       <p>Dashboard</p>
                     </div>
                     
@@ -93,12 +98,12 @@ const Home = () => {
                   
               </Link>
 
-              <Link to="/portfolio" className='featured-portfolio-card'>
+              <Link to="/meteoritelandings" className='featured-portfolio-card' onClick={handleScrollToTop}>
                   
                   <div className='gradient'></div>
                   <div className='descriptions'>
                     <div>
-                      <h4>Project Title 1</h4>
+                      <h4>Meteorite Landings</h4>
                       <p>Dashboard</p>
                     </div>
                     
@@ -107,12 +112,12 @@ const Home = () => {
                   
               </Link>
 
-              <Link to="/portfolio" className='featured-portfolio-card'>
+              <Link to="/bordercrossing" className='featured-portfolio-card' onClick={handleScrollToTop}>
                   
                   <div className='gradient'></div>
                   <div className='descriptions'>
                     <div>
-                      <h4>Project Title 1</h4>
+                      <h4>US Border Crossing</h4>
                       <p>Dashboard</p>
                     </div>
                     
@@ -124,9 +129,11 @@ const Home = () => {
             </section>
 
             {/* EXPLORE MORE BUTTON */}
-            <button className="btn" id='explore-more'>
-                Explore More <span><BsArrowRight size={25} /></span>
-            </button>
+            <Link to="/portfolio" onClick={handleScrollToTop}>
+              <button className="btn" id='explore-more'>
+                  Explore More <span><BsArrowRight size={25} /></span>
+              </button>
+            </Link>
 
             </div>
 
