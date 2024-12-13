@@ -5,6 +5,7 @@ import birdposter from "../img/birdarts.png";
 import hobbit from "../img/thehobbit.png";
 import mockingbird from "../img/mockingbird.png";
 import lesmiserables from "../img/lesmiserables.png";
+import sports from "../img/sports.png";
 import { HiOutlineExternalLink } from "react-icons/hi";
 
 const AboutMe = () => {
@@ -223,7 +224,7 @@ const AboutMe = () => {
                 <div className='sports'>
                   <h4>Sports</h4>
                   <div>
-
+                    <img src={sports} alt="Sports"/>
                   </div>
                 </div>
               </section>

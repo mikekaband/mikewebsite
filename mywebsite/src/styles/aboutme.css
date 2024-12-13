@@ -235,7 +235,8 @@
 
 .bird-poster-description {
     p {
-        font-size: 40px;
+        font-size: 50px;
+        padding-top: 50px;
     }
 
     a {
@@ -275,6 +276,10 @@
 
 .sports {
     background-color: #CEECF2;
+}
+
+.sports img {
+    width: 230px;
 }
 
 .books {
